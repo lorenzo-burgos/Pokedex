@@ -1,0 +1,111 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#buttons {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#buttons button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+#buttons button:hover {
+    background-color: #0056b3;
+}
+
+.pokemons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.pokemon {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.pokemon:hover {
+    transform: translateY(-5px);
+}
+
+.pokemon .number {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.pokemon .name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.pokemon .detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemon .types {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.pokemon .type {
+    background-color: #ddd;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+/* Images */
+.pokemon img {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
